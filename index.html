@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="../assignment_FILL0_wght600_GRAD200_opsz48.png">
+</head>
+<body>
+    <h1>FORMULÁRIO BÁSICO</h1>
+    <div id="form">
+        <form method="get" action="dados.php">
+            <fieldset class="zzz">
+                <label for="nome" id="nome">
+                    <h3>Nome</h3>
+                    <input type="text" placeholder="Digite seu nome. Ex: João" name="nome">
+                </label>
+                <label for="sobrenome" id="sobrenome">
+                    <h3>Sobrenome</h3>
+                    <input type="text" placeholder="Digite seu sobrenome. Ex: Silva" name="sobrenome">
+                </label>
+            </fieldset>
+        <fieldset class="zzz">
+            <label for="email" id="email">
+                <h3>Endereço de email</h3>
+                <input type="email" placeholder="Seu email. Ex: aaaaa@bbbb.com" name="email">
+            </label>
+        </fieldset>
+        <fieldset class="zzz">
+            <label for="senha" id="senha">
+                <h3>Crie uma senha</h3>
+                <input type="password" placeholder="Digite uma senha" name="senha">
+            </label>
+            <label for="senhac" id="senhac">
+                <h3>Confirme a senha</h3>
+                <input type="password" placeholder="Confirme sua senha" name="senhac">
+            </label>
+        </fieldset>
+        <fieldset class="zzz">
+            <label for="data" id="data">
+                <h3>Data de Nascimento</h3>
+                <input type="date" name="data">
+            </label>
+        </fieldset>
+        <fieldset class="zzz">
+            <label for="cpf" id="cpf">
+                <h3>Insira seu CPF</h3>
+                <input type="number" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Ex: 123.456.789-10" name="cpf">
+            </label>
+        </fieldset>
+            <fieldset id="gen"><legend><h3>Qual seu gênero?</h3></legend>
+                <label for="genero" name="genero" id="genero">
+                    <ul>
+                        <li>
+                            <input type="radio" name="gender" value="FEMININO">
+                            <label for="FEMININO">FEMININO</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" value="MASCULINO">
+                        <label for="MASCULINO">MASCULINO</label>
+                    </li>
+                        <li>
+                            <input type="radio" name="gender" value="NÃO-BINÁRIO">
+                        <label for="NAOBINARIO">NÃO-BINÁRIO</label>
+                    </li>
+                        <li>
+                            <input type="radio" name="gender" value="OUTRO">
+                        <label for="OUTRO">OUTRO</label>
+                    </li>
+                    </ul>
+                </label>
+            </fieldset>
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
